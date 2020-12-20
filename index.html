@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-1.0">
+    <title>Registration</title>
+    <style type="text/css">
+    body{
+        background-color: rgb(199, 225, 235);
+    }
+        input[type=text],
+        select {
+            width: 30%;
+            padding: 12px 20px;
+            margin: auto auto;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea{
+            width: 30%;
+            height: 100px;
+            padding: 12px 20px;
+            margin: auto auto;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 30%;
+            background-color: #4c8caf;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        div {
+            width: 100%;
+            border-radius: 3px;
+            padding: 5px;
+            margin:10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+        <form align="center" action="index.php" onsubmit="return confirm('Are you sure?');">
+            <h1>Registration Book</h1>
+            <div>
+            <label for="title"><b>Title:</b></label><br>
+            <input type="text" placeholder="Enter Title" name="title" id="title" value="" required>
+            <br>
+            <label for="author"><b>Author:</b></label><br>
+            <input type="text" placeholder="Enter author" name="author" id="author" value="" required>
+            <br>
+            <label for="price"><b>Price(RM):</b></label><br>
+            <input type="text" placeholder="Enter Price" name="price" id="price" value="" required>
+            <br>
+            <label for="description"><b>Description:</b></label><br>
+            <textarea placeholder="Enter Description" name="description" id="description" value=""  required></textarea>
+            <br>
+            <label for="publisher"><b>Publisher:</b></label><br>
+            <input type="text" placeholder="Enter Publisher Name" name="publisher" id="publisher" value="" required>
+            <br>
+            <label for="isbn"><b>ISBN:</b></label><br>
+            <input type="text" placeholder="Enter ISBN" name="isbn" id="isbn" value="" required><br>
+            <br>
+            <input type="submit" value="Submit">
+
+    </div>
+    </form>
+</body>
+
+</html>
